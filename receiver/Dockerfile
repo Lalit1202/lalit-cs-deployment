@@ -12,4 +12,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY cdr_receiver.py .
 
 # Run the app
-CMD ["python", "-u", "cdr-receiver.py"]
+CMD ["python", "-u", "cdr_receiver.py"]

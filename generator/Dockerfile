@@ -12,4 +12,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY cdr_generator.py .
 
 # Run the app
-CMD ["python", "-u", "cdr-generator.py"]
+CMD ["python", "-u", "cdr_generator.py"]
