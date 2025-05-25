@@ -3,7 +3,7 @@ import json
 
 consumer = KafkaConsumer(
     'cdr-records',
-    bootstrap_servers='kafka-service:9092',
+    bootstrap_servers='kafka-service.kafka.svc.cluster.local:9092',
     value_deserializer=lambda m: json.loads(m.decode('utf-8')),
     group_id='cdr-receiver-group',
     auto_offset_reset='earliest'

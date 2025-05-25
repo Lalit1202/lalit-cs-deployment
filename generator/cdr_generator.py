@@ -3,7 +3,7 @@ import json, time, uuid, random
 from datetime import datetime
 
 producer = KafkaProducer(
-    bootstrap_servers='kafka-service:9092',
+    bootstrap_servers='kafka-service.kafka.svc.cluster.local:9092',
     value_serializer=lambda v: json.dumps(v).encode('utf-8')
 )
 
